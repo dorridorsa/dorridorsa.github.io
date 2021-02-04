@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img src="../assets/dorsa-logo.png" class="logo" alt="Dorsa logo">
+    <HelloWorld msg="Välkommen till Make Up - butiken"/>
   </div>
 </template>
 
@@ -16,3 +16,5 @@ export default {
   }
 }
 </script>
+
+

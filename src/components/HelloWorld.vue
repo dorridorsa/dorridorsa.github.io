@@ -1,34 +1,29 @@
 <template>
-  <div class="hello">
+  <div class="hej">
     <h1>{{ msg }}</h1>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+      Välj utav produktens varumärke och besök hemsidan genom att klicka på
+      <a href="http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline" target="_blank" rel="noopener">Maybelline</a>.
     </p>
-    <h3>Installed CLI Plugins</h3>
+    <h3>Blush</h3>
     <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa" target="_blank" rel="noopener">pwa</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+      <li><a class="btn btn-light" href="http://makeup-api.herokuapp.com/api/v1/products?product_category=powder&product_type=blush" >Powder</a></li>
+
+      <li><a class="btn btn-light" href="http://makeup-api.herokuapp.com/api/v1/products?product_category=cream&product_type=blush">Cream</a></li>
+
+      <li><a class="btn btn-light" href="http://makeup-api.herokuapp.com/api/v1/products?product_tags=Vegan&product_type=blush">Vegan</a></li>
+
+      <li><a class="btn btn-light" href="http://makeup-api.herokuapp.com/api/v1/products?product_tags=Gluten+Free&product_type=blush">Gluten free</a></li>
+
+      <li><a class="btn btn-light" href="http://makeup-api.herokuapp.com/api/v1/products?product_tags=Natural&product_type=blush">Natural</a></li>
     </ul>
-    <h3>Essential Links</h3>
+    
+    <h3>Social Media</h3>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+      
+      <li><a class="btn btn-secondary" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a class="btn btn-secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener">Linkedin</a></li>
+      <li><a class="btn btn-secondary" href="https://sv-se.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
     </ul>
   </div>
 </template>
@@ -42,10 +37,20 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
+
+h1{
+  padding: 15px;
+}
+
+p{
+  padding: 3px;
+
+}
+
 h3 {
-  margin: 40px 0 0;
+  margin: 50px 10px 0;
 }
 ul {
   list-style-type: none;
@@ -53,9 +58,9 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 13px;
 }
 a {
-  color: #42b983;
+  color:#e187e4;
 }
 </style>

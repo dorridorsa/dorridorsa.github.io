@@ -5,8 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    message: 'Klicka här'
   },
   mutations: {
+    button(state) {
+      state.message ='Laddar ...'
+    }
   },
   actions: {
   },
